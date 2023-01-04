@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">NuevoHogar_AppMovil</string>
+    <!-- Strings relacionados al inicio de sesión -->
+    <string name="lblEnlaceRegistro">¿No tienes una cuenta? Registrate.</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- Strings relacionados a validaciones -->
+    <string name="limiteContrasenia">La contrasenia debe tener entre 8 y 16 caracteres</string>
+    <string name="campoVacio">El campo está vacío</string>
+    <string name="contraseniaLimiteInvalido">La contraseña debe tener entre 8 y 16 caracteres</string>
+    <string name="telefonoLimite">Alcanzo el limite de 20 caracteres</string>
+    <string name="fechaLimite">Longitud de fecha incorrecto</string>
+    <string name="limiteAlcanzado50">Limite de 50 caracteres alcanzado</string>
+    <string name="limiteAlcanzado100">Limite de 100 caracteres alcanzado</string>
+    <string name="contraseniaMinusculaInvalida">La contrasenia debe tener al menos 1 minuscula</string>
+    <string name="contraseniaMayusculaInvalida">La contraseña debe tener al menos 1 mayuscula</string>
+    <string name="contraseniaEspaciosBlancosInvalido">La contraseña no debe tener espaios blancos</string>
+    <string name="contraseniaSimboloInvalido">La contraseña debe tener al menos 1 simbolo (@, /, _, -, %, #, $)</string>
+    <string name="contraseniaDigitoInvalido">La contraseña debe tener al menos 1 digito</string>
+    <string name="nombreInvalido">No existe el usuario</string>
+    <string name="telefonoInvalido">El telefono no tiene un formato correcto</string>
+    <string name="correoInvalido">El correo no tiene un formato valido</string>
+    <string name="fechaInvalido">La fecha no es la correcta</string>
+    <!-- Strings relacionados a inputs -->
+    <string name="lblUsuario">Usuario</string>
+    <string name="lblContrasenia">Contraseña</string>
+    <string name="lblFecha">Fecha</string>
+    <string name="lblNombre">Nombre completo</string>
+    <string name="lblDireccion">Dirección</string>
+    <string name="lblTelefono">Telefono</string>
+    <string name="lblCorreo">Correo electrónico</string>
+    <string name="lblBiografia">Biografía</string>
+    <string name="lblSeleccion">Selecciona tu rol:</string>
+    <string name="lblRdAnimalista">Animalista</string>
+    <string name="lblRdRefugio">Refugio</string>
+    <!-- Strings relacionados a botones -->
+    <string name="lblBtnInicioSesion">Iniciar sesión</string>
+    <string name="lblBtnRegistrar">Registrar</string>
+    <string name="lblBtnCancelar">Cancelar</string>
 </resources>
