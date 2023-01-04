@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.usuarios.RegistroUsuario">
+
+        <TextView
+            android:id="@+id/lbSeleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txtNombre"
+            android:hint="@string/lblSeleccion"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/lbSeleccion"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_above="@id/txtNombre">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdAnimalista"
+                android:text="@string/lblRdAnimalista"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdRefugio"
+                android:text="@string/lblRdRefugio"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:checked="true"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txtCorreo"
+            android:layout_marginTop="20dp"
+            android:hint="@string/lblNombre"
+            android:inputType="text"
+            android:maxLength="100"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txtDireccion"
+            android:layout_marginTop="20dp"
+            android:hint="@string/lblCorreo"
+            android:inputType="textEmailAddress"
+            android:maxLength="100"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dpFecha"
+            android:layout_marginTop="20dp"
+            android:hint="@string/lblDireccion"
+            android:inputType="text"
+            android:maxLength="100"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/dpFecha"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="@string/lblFecha"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dpFecha"
+            android:layout_marginTop="20dp"
+            android:hint="@string/lblTelefono"
+            android:inputType="phone"
+            android:maxLength="20"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTelefono"
+            android:layout_marginTop="20dp"
+            android:hint="@string/lblUsuario"
+            android:inputType="text"
+            android:maxLength="50"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/psdContrasenia"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUsuario"
+            android:layout_marginTop="20dp"
+            android:hint="@string/lblContrasenia"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/psdContrasenia"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="64dp"
+            android:enabled="false"
+            android:text="@string/lblBtnInicioSesion" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/psdContrasenia"
+            android:layout_toEndOf="@id/btnRegistrar"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="@string/lblBtnCancelar"/>
+
+    </RelativeLayout>
+</layout>
